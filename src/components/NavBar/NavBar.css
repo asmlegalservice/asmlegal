@@ -233,14 +233,13 @@
 /* ============================= */
 @media (max-width: 991px) {
 
-  /* Kill CSS hover completely on mobile */
-  .navbar .dropdown:hover .dropdown-menu {
-    display: none !important;
-  }
+ 
+ 
 
   /* Only show when Bootstrap adds .show class via tap */
   .navbar .dropdown-menu.show {
     display: block !important;
+    overflow-y: scroll;
   }
 
   /* Services resets to inline/stacked */
@@ -256,5 +255,106 @@
 
   .services-grid {
     grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  .services-item {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+  }
+
+  .services-item:last-child {
+    border-bottom: none;
+  }
+
+  .service-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ef4524e6;
+    margin-bottom: 8px;
+  }
+
+  .services-item ul li {
+    font-size: 0.85rem;
+    padding: 4px 0;
+  }
+
+  /* Blog dropdown mobile */
+  .dropdown-menu.blog-menu {
+    min-width: 100% !important;
+    width: 100%;
+    position: static !important;
+    transform: none !important;
+    box-shadow: none !important;
+    padding: 10px !important;
+  }
+
+  .blog-grid {
+    flex-direction: column;
+  }
+
+  .blog-item {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 12px 10px;
+  }
+
+  .blog-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Navbar collapse mobile - scrollable */
+  .navbar-collapse {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .navbar-nav {
+    gap: 0 !important;
+  }
+
+  .nav-item {
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link, .nav-btn {
+    padding: 12px 0 !important;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+  }
+
+  /* Toggle button */
+  .navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    background: #ef4524e6;
+    color: white;
+    font-size: 1.25rem;
+  }
+
+  /* Mobile button */
+  .btn-getInTouch {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
   }
 }
