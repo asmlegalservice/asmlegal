@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import logo from "../../assets/ASM_Main_Logo.png";
+import logo from "../../assets/ASM_Main_logo.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
@@ -20,13 +20,29 @@ const servicesData = [
     ],
   },
   {
-    title: "Matrimonial & Disputes",
-    items: ["Divorce", "Family Disputes", "Domestic Violence", "Counselling & Consultation"],
+    title: "Matrimonial & Family Disputes",
+    items: ["Mutual Divorse", "Family Disputes", "Domestic Violence","Muslim Divorce", "Counselling & Consultation"],
   },
   {
     title: "Litigation",
     items: ["Civil Cases", "Commercial Disputes", "Mediation", "Insolvency"],
   },
+   {
+    title: "Litigation",
+    items: ["Civil Cases", "Commercial Disputes", "Mediation", "Insolvency"],
+  },
+   {
+    title: "White Collar Crimes",
+    items: ["Corporate & Financial Fraud Defense", 
+      "Money Laundering & Economic Offenses", "Business Crime & Corporate Offenses", "Criminal Defamation & Reputation Management"],
+  },
+   {
+    title: "Startup & Early Stages",
+    items: ["startup companies ", "Clear Contracts & Legal Documentation",
+       "Safeguard Your Brand & Business", "Dispute Resolution & Risk Management"
+      ,"Regulatory Compliance & RPR Support","Regulatory Compliance & RPR Support"],
+  },
+  
 ];
 
 const Navbar = () => {
@@ -117,7 +133,7 @@ const Navbar = () => {
                 className="nav-link dropdown-toggle nav-btn"
                 {...makeClickHandler(servicesOpen, setServicesOpen, setBlogOpen)}
               >
-                Services
+                Practice Areas
               </button>
 
               {servicesOpen && (

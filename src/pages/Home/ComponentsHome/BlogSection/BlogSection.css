@@ -115,16 +115,44 @@
     padding-right: 0;
     margin-bottom: 40px;
     text-align: center;
+    height: auto;
+    position: static;
+    top: 0;
   }
 
   .blog-title {
     font-size: 2rem;
   }
+
+  .testimonial-card {
+    margin-bottom: 20px;
+  }
+
+  .author-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .author-name {
+    font-size: 0.95rem;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 50px 0;
+  }
+
+  .blog-header {
+    margin-bottom: 30px;
+  }
+
   .blog-title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+
+  .blog-label {
+    font-size: 0.8rem;
   }
 
   .testimonial-card {
@@ -137,5 +165,65 @@
 
   .testimonial-text {
     font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-author {
+    gap: 12px;
+  }
+
+  .author-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .author-name {
+    font-size: 0.9rem;
+  }
+
+  .author-role {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-section {
+    padding: 40px 0;
+  }
+
+  .blog-title {
+    font-size: 1.5rem;
+  }
+
+  .blog-link {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-card {
+    padding: 20px 15px;
+  }
+
+  .quote-icon {
+    font-size: 2.5rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .author-img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .author-name {
+    font-size: 0.85rem;
+  }
+
+  .author-role {
+    font-size: 0.7rem;
   }
 }
