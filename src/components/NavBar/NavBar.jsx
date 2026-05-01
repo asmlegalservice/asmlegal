@@ -27,9 +27,13 @@ const servicesData = [
     title: "Litigation",
     items: ["Civil Cases", "Commercial Disputes", "Mediation", "Insolvency"],
   },
+  {
+    title: "Criminal Litigation ",
+    items: ["Bail Matters ", "FIR Quashing & Legal Notice Support", "Domestic Violence, Dowry & Matrimonial Offenses", "Cheque Bounce & Financial Disputes"],
+  },
    {
-    title: "Litigation",
-    items: ["Civil Cases", "Commercial Disputes", "Mediation", "Insolvency"],
+    title: "Succession Planning & Estate Management ",
+    items: ["Transfer of family assets and wealth ", "Business succession planning ", "Protection of beneficiaries’ rights ", "Minimizing legal risks and delays "],
   },
    {
     title: "White Collar Crimes",
@@ -42,6 +46,7 @@ const servicesData = [
        "Safeguard Your Brand & Business", "Dispute Resolution & Risk Management"
       ,"Regulatory Compliance & RPR Support","Regulatory Compliance & RPR Support"],
   },
+  
   
 ];
 
@@ -200,7 +205,7 @@ const Navbar = () => {
             <Link to="/contact">
               <button className="btn btn-getInTouch">
                 <i className="bi bi-telephone me-2"></i>
-                Book Appointment
+                Request Appointment
               </button>
             </Link>
           </div>

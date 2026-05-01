@@ -34,7 +34,7 @@ const VisionSection = () => {
                             <i className={`icon ${item.icon}`} pri-icon></i>
                             <h2>{item.title}</h2>
                             <p>{item.desc}</p>
-                            <button className="btn">Read More →</button>
+                            
                         </div>
 
                     </div>

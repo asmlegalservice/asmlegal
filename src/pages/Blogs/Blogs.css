@@ -89,112 +89,16 @@
   color: #d13a1f;
 }
 
-@media (max-width: 991px) {
-  .blogs-page {
-    padding-top: 130px;
-  }
-
-  .page-title {
-    font-size: 2.5rem;
-  }
-
-  .lead {
-    font-size: 1.1rem;
-  }
-
-  .blog-title-card {
-    font-size: 1.1rem;
-  }
-}
-
 @media (max-width: 768px) {
   .blogs-page {
-    padding-top: 110px;
+    padding-top: 120px;
   }
 
   .page-title {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-
-  .title-underline {
-    width: 50px;
-    height: 2px;
-    margin-bottom: 20px;
-  }
-
-  .lead {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .blog-card {
     padding: 20px;
-  }
-
-  .blog-title-card {
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-  }
-
-  .blog-excerpt {
-    font-size: 0.85rem;
-    line-height: 1.5;
-  }
-
-  .blog-footer {
-    padding-top: 12px;
-  }
-
-  .read-more {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .blogs-page {
-    padding-top: 100px;
-    padding-bottom: 40px;
-  }
-
-  .page-title {
-    font-size: 1.6rem;
-  }
-
-  .lead {
-    font-size: 0.95rem;
-  }
-
-  .blog-card {
-    padding: 15px;
-  }
-
-  .blog-category {
-    font-size: 0.75rem;
-    margin-bottom: 8px;
-  }
-
-  .blog-title-card {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-
-  .blog-excerpt {
-    font-size: 0.8rem;
-    margin-bottom: 15px;
-  }
-
-  .blog-footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding-top: 10px;
-  }
-
-  .blog-date {
-    font-size: 0.75rem;
-  }
-
-  .read-more {
-    font-size: 0.85rem;
   }
 }
