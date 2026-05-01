@@ -1,0 +1,73 @@
+/* Hide default cursor on desktop only */
+body {
+  cursor: none;
+}
+
+/* Restore default cursor on phones/tablets only */
+@media (max-width: 768px), (pointer: coarse) {
+  body {
+    cursor: auto !important;
+  }
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+}
+
+/* Inner dot */
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  will-change: transform;
+}
+
+.cursor-ring {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out, width 0.15s ease, height 0.15s ease;
+  mix-blend-mode: difference;
+  will-change: transform;
+}
+
+/* Hover effect */
+.cursor-ring.cursor-hover {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cursor-dot.cursor-hover {
+  background: white;
+}
+
+/* Click animation */
+.cursor-ring.cursor-click {
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* Hide custom cursor when disclaimer is open */
+body.disclaimer-open .cursor-dot,
+body.disclaimer-open .cursor-ring {
+  display: none !important;
+}
+
+body.disclaimer-open {
+  cursor: auto !important;
+}
+
+body.disclaimer-open .disclaimer-overlay * {
+  cursor: auto !important;
+}

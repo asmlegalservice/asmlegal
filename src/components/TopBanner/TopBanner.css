@@ -1,0 +1,19 @@
+.separator {
+  color: #aaa;      
+  padding: 0 8px;
+  font-weight: 300;
+  user-select: none; 
+  
+}
+
+
+
+.TopBanner-container {
+  background: rgb(0, 0, 0); /* semi-transparent */
+  backdrop-filter: blur(10px);   /* 🔥 blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  font-size: 13px;
+  color: white;
+  padding: 8px 20px;
+}
+

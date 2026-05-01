@@ -1,0 +1,258 @@
+/* ============================= */
+/*            NAVBAR             */
+/* ============================= */
+
+.custom-navbar {
+  background: #ffffff;
+  transition: all 0.3s ease;
+  padding: 10px 0;
+}
+
+/* Sticky on scroll */
+.custom-navbar.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+/* NAV LINKS */
+.custom-navbar .nav-link {
+  color: #121212 !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ef4524e6 !important;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* ACTIVE LINK */
+.active-link {
+  color: #ef4524e6 !important;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* LOGO */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  mix-blend-mode: exclusion;
+}
+
+.navbar-brand span {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* TOGGLER */
+.navbar-toggler {
+  border: none;
+  font-size: 1.5rem;
+  color: #ef4524e6;
+}
+
+/* BUTTON */
+.btn-getInTouch {
+  background: #ef4524e6;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.btn-getInTouch:hover {
+  background: #d13a1f;
+}
+
+/* ============================= */
+/*        DROPDOWN COMMON        */
+/* ============================= */
+
+
+
+/* ============================= */
+/*     SERVICES MEGA MENU        */
+/* ============================= */
+
+.services-dropdown {
+  position: static;
+}
+
+.services-dropdown .dropdown-menu.services-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 100%;
+  max-width: 1900px;
+
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 0px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+}
+
+/* COLUMN */
+.services-item {
+  padding: 12px 16px;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.services-item:hover {
+  background: #f8f8f8;
+  transform: translateY(-4px);
+}
+
+/* TITLE */
+.service-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+
+/* LIST */
+.services-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.services-item ul li {
+  font-size: 0.85rem;
+  color: #555;
+  padding: 6px 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.services-item ul li:hover {
+  color: #ef4524e6;
+  transform: translateX(5px);
+}
+
+/* SCROLLBAR */
+.services-item ul::-webkit-scrollbar {
+  width: 4px;
+}
+
+.services-item ul::-webkit-scrollbar-thumb {
+  background: #ef4524e6;
+  border-radius: 4px;
+}
+
+/* ============================= */
+/*        BLOG DROPDOWN          */
+/* ============================= */
+
+.blog-menu {
+  min-width: 700px;
+  padding: 15px;
+}
+
+.blog-grid {
+  display: flex;
+}
+
+.blog-item {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #eee;
+}
+
+.blog-item:last-child {
+  border-right: none;
+}
+
+.blog-item span {
+  font-weight: 500;
+}
+
+.blog-item small {
+  color: #777;
+}
+
+/* ============================= */
+/*     DESKTOP ANIMATION         */
+/* ============================= */
+
+/* ============================= */
+/*     DESKTOP HOVER (lg+)       */
+/* ============================= */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    margin-top: -1px;
+  }
+
+  .services-dropdown .dropdown-menu.services-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    margin-top: -13px;
+  }
+}
+
+/* ============================= */
+/*     MOBILE CLICK (< lg)       */
+/* ============================= */
+@media (max-width: 991px) {
+
+  /* Kill CSS hover completely on mobile */
+  .navbar .dropdown:hover .dropdown-menu {
+    display: none !important;
+  }
+
+  /* Only show when Bootstrap adds .show class via tap */
+  .navbar .dropdown-menu.show {
+    display: block !important;
+  }
+
+  /* Services resets to inline/stacked */
+  .services-dropdown .dropdown-menu.services-menu {
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+    box-shadow: none !important;
+    padding: 10px !important;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

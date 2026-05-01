@@ -1,0 +1,114 @@
+/* SECTION HEADER */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #090909;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #ef4524e6;
+}
+
+/* CARD */
+.vision-card {
+  padding: 30px 20px;
+  height: 100%;
+ 
+  transition: 0.3s;
+  border-right: 1px solid black;
+  
+}
+
+.vision-section-container{
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* REMOVE BORDER FROM LAST CARD */
+.col-lg-4:nth-child(3n) .vision-card {
+  border-right: none;
+}
+
+/* ICON (FIXED PERFECT CIRCLE) */
+.vision-card i {
+  width: 65px;
+  height: 65px;
+  background: #ef4524e6; /* 🔥 better than red for legal theme */
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  margin: 0 0 40px; 
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.vision-card:hover i {
+ 
+  transform: translateY(-5px);
+}
+
+/* TITLE */
+.vision-card h2 {
+
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.vision-card p {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: #666;
+  line-height: 1.6;
+}
+
+/* HOVER CARD */
+.vision-card:hover {
+  transform: translateY(-8px);
+}
+
+/* BUTTON STYLING */
+.vision-card .btn {
+  background: transparent;
+  border: none;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* BUTTON HOVER - RED TEXT ONLY */
+.vision-card .btn:hover {
+  color: #ef4524e6;
+  transform: translateX(5px);
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+.vision-card {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  
+}

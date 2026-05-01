@@ -1,0 +1,136 @@
+/* OVERLAY */
+.disclaimer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* BOTTOM BAR */
+.disclaimer-bar {
+  background: white;
+  width: 100%;
+  max-height: 50vh;
+  display: flex;
+  align-items: stretch;
+  animation: slideUp 0.5s ease;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CONTENT AREA */
+.disclaimer-content {
+  flex: 1;
+  padding: 20px 30px;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+/* HEADER */
+.disclaimer-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.disclaimer-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #090909;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.disclaimer-divider {
+  width: 40px;
+  height: 2px;
+  background: #ff947f;
+}
+
+/* BODY */
+.disclaimer-body p {
+  font-size: 0.8rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  text-align: left;
+  text-indent: 30px;
+}
+
+.disclaimer-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* BUTTON - RIGHT SIDE */
+.disclaimer-btn {
+  background: #ff947f;
+  color: white;
+  border: none;
+  
+  padding: 15px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  align-self: center;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.disclaimer-btn:hover {
+  background: #d13a1f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(239, 69, 36, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .disclaimer-bar {
+    flex-direction: column;
+    max-height: 70vh;
+  }
+
+  .disclaimer-content {
+    padding: 15px 20px;
+  }
+
+  .disclaimer-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .disclaimer-btn {
+    align-self: flex-end;
+    margin: 0 20px 15px 0;
+    padding: 10px 30px;
+  }
+
+  .disclaimer-body p {
+    font-size: 0.75rem;
+    text-indent: 15px;
+  }
+}
