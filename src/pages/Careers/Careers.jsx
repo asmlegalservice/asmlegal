@@ -6,7 +6,7 @@ const Careers = () => {
     {
       id: 1,
       title: "Associate Lawyer",
-      location: "New Delhi",
+      location: "Kolhapur",
       type: "Full-time",
       experience: "2-4 years",
       description: "Join our litigation team handling civil and commercial disputes. Strong research and drafting skills required."
@@ -14,7 +14,7 @@ const Careers = () => {
     {
       id: 2,
       title: "Legal Intern",
-      location: "New Delhi",
+      location: "Kolhapur",
       type: "Internship",
       experience: "Freshers",
       description: "Gain hands-on experience in legal research, documentation, and court procedures. Law students welcome."
@@ -22,7 +22,7 @@ const Careers = () => {
     {
       id: 3,
       title: "Real Estate Legal Advisor",
-      location: "New Delhi",
+      location: "Kolhapur",
       type: "Full-time",
       experience: "3-5 years",
       description: "Handle property transactions, due diligence, and real estate documentation for corporate clients."
@@ -30,7 +30,7 @@ const Careers = () => {
     {
       id: 4,
       title: "Family Law Associate",
-      location: "New Delhi",
+      location: "Kolhapur",
       type: "Full-time",
       experience: "2-5 years",
       description: "Specialize in matrimonial disputes, divorce proceedings, and family counseling matters."

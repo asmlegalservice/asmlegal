@@ -357,3 +357,253 @@
     font-size: 1.3rem;
   }
 }
+
+/* ============================= */
+/*      ARTICLE MODAL POPUP      */
+/* ============================= */
+
+.article-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.article-modal {
+  background: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  animation: slideUp 0.3s ease;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #090909;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-close-btn:hover {
+  background: #ef4524e6;
+  color: #ffffff;
+}
+
+.modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-image-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 0.75rem;
+  color: #ffffff;
+  background: #ef4524e6;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modal-body {
+  padding: 35px 40px;
+}
+
+.modal-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #090909;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.modal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.modal-meta i {
+  color: #ef4524e6;
+  margin-right: 5px;
+}
+
+.modal-publication,
+.modal-date,
+.modal-author {
+  display: flex;
+  align-items: center;
+}
+
+.modal-summary,
+.modal-full-content {
+  margin-bottom: 25px;
+}
+
+.modal-summary h4,
+.modal-full-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #090909;
+  margin-bottom: 12px;
+}
+
+.modal-summary p,
+.modal-full-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.modal-footer {
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.btn-request-article {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #ef4524e6;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-request-article:hover {
+  background: #090909;
+  color: #ffffff;
+}
+
+/* Modal Responsive */
+@media (max-width: 768px) {
+  .article-modal-overlay {
+    padding: 10px;
+  }
+
+  .article-modal {
+    max-height: 95vh;
+  }
+
+  .modal-image-container {
+    height: 200px;
+  }
+
+  .modal-body {
+    padding: 25px 20px;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-meta {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.85rem;
+  }
+
+  .modal-summary p,
+  .modal-full-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn-request-article {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-image-container {
+    height: 180px;
+  }
+
+  .modal-body {
+    padding: 20px 15px;
+  }
+
+  .modal-title {
+    font-size: 1.1rem;
+  }
+
+  .modal-summary h4,
+  .modal-full-content h4 {
+    font-size: 0.95rem;
+  }
+
+  .btn-request-article {
+    font-size: 0.9rem;
+  }
+}
+
+/* Cursor pointer for article cards */
+.article-card {
+  cursor: pointer;
+}

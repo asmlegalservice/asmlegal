@@ -14,7 +14,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   z-index: 1000;
 }
 
@@ -42,14 +42,15 @@
 /* LOGO */
 .navbar-brand {
   display: flex;
-  align-items:center;
-  gap:5px;
-  
+  align-items: center;
+  gap: 5px;
+
 }
 
 .navbar-container {
-padding-left: 90px;
-padding-right: 90px;}
+  padding-left: 90px;
+  padding-right: 20px;
+}
 
 .navbar-logo {
   height: 40px;
@@ -103,14 +104,14 @@ padding-right: 90px;}
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  
+
   width: 100%;
   max-width: 1900px;
 
   padding: 30px;
   background: #ffffff;
   border-radius: 0px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 /* GRID */
@@ -126,7 +127,7 @@ padding-right: 90px;}
   border-radius: 0px;
   transition: all 0.3s ease;
   border-right: 1px solid #eee;
-  
+
 }
 
 .services-item:hover {
@@ -209,9 +210,6 @@ padding-right: 90px;}
   color: #777;
 }
 
-/* ============================= */
-/*     DESKTOP ANIMATION         */
-/* ============================= */
 
 /* ============================= */
 /*     DESKTOP HOVER (lg+)       */
@@ -240,13 +238,18 @@ padding-right: 90px;}
 @media (max-width: 991px) {
 
 
-  
+
 
   /* Only show when Bootstrap adds .show class via tap */
   .navbar .dropdown-menu.show {
- 
+
     overflow-y: auto;
     max-height: 60vh;
+  }
+
+  .navbar-container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* Services resets to inline/stacked */
@@ -315,7 +318,7 @@ padding-right: 90px;}
   .navbar-collapse {
     background: white;
     padding: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 100%;
     left: 0;
@@ -341,7 +344,8 @@ padding-right: 90px;}
     border-bottom: none;
   }
 
-  .nav-link, .nav-btn {
+  .nav-link,
+  .nav-btn {
     padding: 12px 0 !important;
     width: 100%;
     text-align: left;
@@ -371,9 +375,19 @@ padding-right: 90px;}
 }
 
 @media (min-width: 991px) and (max-width: 1360px) {
-  .services-dropdown .dropdown-menu.services-menu
-  {
+  .services-dropdown .dropdown-menu.services-menu {
     width: 90%;
   }
+
+  .navbar-container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .btn-getInTouch {
+ 
+  padding: 8px 8px;
+ 
+}
 
 }
