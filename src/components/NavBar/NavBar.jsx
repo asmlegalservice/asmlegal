@@ -63,7 +63,7 @@ const servicesData = [
       "Protection of beneficiaries’ rights ",
       "Minimizing legal risks and delays ",
       "Inheritance & Succession Disputes",
-      "Will & Asset Transfer"
+      "Legal Will & Asset Transfer"
     ],
   },
 
@@ -74,7 +74,6 @@ const servicesData = [
       "Clear Contracts & Legal Documentation",
       "Safeguard Your Brand & Business",
       "Founder & Investor Documentation",
-      "Business Formation & structuring",
       "Strategic dispute resolution & risk control"
     ],
   },
