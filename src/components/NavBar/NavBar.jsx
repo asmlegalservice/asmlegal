@@ -15,7 +15,7 @@ const servicesData = [
       "Documentation & Registration",
       "Corporate and Retail Leasing",
       "Real Estate Collaboration & Joint Ventures",
-     
+
     ],
   },
   {
@@ -69,11 +69,15 @@ const servicesData = [
 
   {
     title: "Startup & Early Stage Companies",
-    items: ["startup companies ",
+    items: [
+      "Company Formation & Setup ",
       "Clear Contracts & Legal Documentation",
       "Safeguard Your Brand & Business",
-      "Dispute Resolution & Risk Management",
-      "Regulatory Compliance & RPR Support"],
+      "Fund Raising & Investor Support",
+      "Founder & Investor Documentation",
+      "Bussiness Formation & structuring",
+      "Strategic dispute resolution & risk control"
+    ],
   },
 
 

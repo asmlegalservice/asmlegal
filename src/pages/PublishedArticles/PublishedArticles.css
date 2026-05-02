@@ -87,15 +87,23 @@
 }
 
 .articles-grid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
+}
+
+.articles-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 0;
 }
 
 .article-card {
   background: #ffffff;
-  padding: 35px 30px;
+  padding: 25px;
   border: 1px solid #e0e0e0;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .article-card:hover {
@@ -118,19 +126,29 @@
 }
 
 .article-title {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #090909;
   margin-bottom: 15px;
   line-height: 1.4;
 }
 
-.article-summary {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 20px;
+.container-img {
+  width: 100%;
+  overflow: hidden;
 }
+
+.container-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover .container-img img {
+  transform: scale(1.05);
+}
+
 
 .article-meta {
   border-top: 1px solid #eee;
@@ -247,11 +265,15 @@
   }
 
   .article-card {
-    padding: 30px 25px;
+    padding: 25px 20px;
   }
 
   .article-title {
     font-size: 1.2rem;
+  }
+
+  .container-img img {
+    height: 180px;
   }
 
   .articles-cta {
@@ -288,21 +310,20 @@
     font-size: 0.8rem;
   }
 
+  .articles-row {
+    gap: 20px 0;
+  }
+
   .article-card {
-    padding: 25px 20px;
+    padding: 20px 15px;
   }
 
   .article-title {
     font-size: 1.1rem;
   }
 
-  .article-summary {
-    font-size: 0.9rem;
-  }
-
-  .article-date-author {
-    flex-direction: column;
-    gap: 5px;
+  .container-img img {
+    height: 160px;
   }
 
   .articles-cta h2 {
@@ -384,9 +405,9 @@
 
 .article-modal {
   background: #ffffff;
-  width: 100%;
-  max-width: 800px;
-  max-height: 90vh;
+  width: 95%;
+  max-width: 1100px;
+  max-height: 95vh;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
@@ -438,14 +459,16 @@
 .modal-image-container {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 75vh;
+  min-height: 500px;
   overflow: hidden;
+  background: #f8f8f8;
 }
 
 .modal-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .modal-category {
@@ -463,15 +486,25 @@
 }
 
 .modal-body {
-  padding: 35px 40px;
+  padding: 20px 30px;
+}
+
+.modal-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .modal-title {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #090909;
   line-height: 1.4;
-  margin-bottom: 20px;
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
 }
 
 .modal-meta {
@@ -517,22 +550,21 @@
   line-height: 1.7;
 }
 
-.modal-footer {
-  padding-top: 20px;
-  border-top: 1px solid #eee;
-}
+/* Modal footer removed - combined with header row */
 
 .btn-request-article {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   background: #ef4524e6;
   color: #ffffff;
-  padding: 12px 25px;
+  padding: 10px 20px;
   border-radius: 6px;
   font-weight: 500;
+  font-size: 0.9rem;
   text-decoration: none;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .btn-request-article:hover {
@@ -541,6 +573,21 @@
 }
 
 /* Modal Responsive */
+@media (max-width: 991px) {
+  .article-modal {
+    max-width: 900px;
+  }
+
+  .modal-image-container {
+    height: 65vh;
+    min-height: 400px;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .article-modal-overlay {
     padding: 10px;
@@ -548,62 +595,73 @@
 
   .article-modal {
     max-height: 95vh;
+    width: 98%;
   }
 
   .modal-image-container {
-    height: 200px;
+    height: 50vh;
+    min-height: 300px;
   }
 
   .modal-body {
-    padding: 25px 20px;
+    padding: 15px 20px;
+  }
+
+  .modal-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
   }
 
   .modal-title {
-    font-size: 1.3rem;
-  }
-
-  .modal-meta {
-    flex-direction: column;
-    gap: 10px;
-    font-size: 0.85rem;
-  }
-
-  .modal-summary p,
-  .modal-full-content p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   .btn-request-article {
     width: 100%;
     justify-content: center;
-    padding: 14px 25px;
+    padding: 12px 20px;
   }
 }
 
 @media (max-width: 576px) {
   .modal-image-container {
-    height: 180px;
+    height: 40vh;
+    min-height: 200px;
   }
 
   .modal-body {
-    padding: 20px 15px;
+    padding: 15px;
   }
 
   .modal-title {
     font-size: 1.1rem;
   }
 
-  .modal-summary h4,
-  .modal-full-content h4 {
-    font-size: 0.95rem;
+  .btn-request-article {
+    font-size: 0.85rem;
+    padding: 10px 15px;
   }
 
-  .btn-request-article {
-    font-size: 0.9rem;
+  .article-card {
+    padding: 20px;
+  }
+
+  .article-title {
+    font-size: 1.1rem;
+  }
+
+  .container-img img {
+    height: 150px;
   }
 }
 
 /* Cursor pointer for article cards */
 .article-card {
   cursor: pointer;
+}
+
+/* Fix row margin for Bootstrap */
+.articles-row > [class*="col-"] {
+  margin-bottom: 0;
 }
