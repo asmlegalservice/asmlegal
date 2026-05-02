@@ -9,14 +9,9 @@ import { Link } from "react-scroll";
 const PracticeArea = () => {
   const practiceAreas = [
     {
-      image: img2,
-      title: "Startup & Early-Stage Companies",
-      description: "Civil Rights"
-    },
-     {
-      image: img1,
-      title: "Disputes & Litigation",
-      description: "Comprehensive legal consultation services"
+      image: img4,
+      title: "Real Estate & Property Law",
+      description: "Wills, trusts, and succession planning"
     },
     {
       image: img3,
@@ -24,9 +19,14 @@ const PracticeArea = () => {
       description: "Family Law"
     },
     {
+      image: img1,
+      title: "Civil & Revenue Litigation",
+      description: "Bail Matters "
+    },
+    {
       image: img4,
-      title: "Real Estate & Property",
-      description: "Wills, trusts, and succession planning"
+      title: "Criminal Litigation & White Collar Crimes",
+      description: "Corporate & Financial Fraud Defense"
     },
     {
       image: img5,
@@ -35,8 +35,8 @@ const PracticeArea = () => {
     },
     {
       image: img1,
-      title: "Services We Facilitate",
-      description: "Read More"
+      title: "Startup & Early Stages",
+      description: "startup companies"
     }
   ];
 

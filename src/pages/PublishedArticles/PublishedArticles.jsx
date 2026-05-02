@@ -77,9 +77,9 @@ const PublishedArticles = () => {
       date: "August 2024",
       publication: "Criminal Law Digest",
       category: "Criminal Law",
-      summary: "Insights into defending corporate fraud, financial crimes, and economic offenses in the current legal framework.",
+      summary: "Insights into defending corporate fraud, financial crimes, and economic offences in the current legal framework.",
       image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
-      content: "This article provides strategic insights for defending against white-collar criminal charges, including corporate fraud, money laundering, and economic offenses. It covers pre-arrest strategies, bail considerations, evidence management, and trial preparation, drawing from recent high-profile cases and evolving judicial trends."
+      content: "This article provides strategic insights for defending against white-collar criminal charges, including corporate fraud, money laundering, and economic offences. It covers pre-arrest strategies, bail considerations, evidence management, and trial preparation, drawing from recent high-profile cases and evolving judicial trends."
     }
   ];
 

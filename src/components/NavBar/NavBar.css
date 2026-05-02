@@ -117,7 +117,7 @@
 /* GRID */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
 }
 
@@ -230,7 +230,8 @@
     width: 1400px;
     margin-top: -13px;
     height:550px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-behavior: contain;
   }
 }
 
@@ -378,7 +379,7 @@
 
 @media (min-width: 991px) and (max-width: 1360px) {
   .services-dropdown .dropdown-menu.services-menu {
-    width: 90%;
+    width: 100%;
   }
 
   .navbar-container {

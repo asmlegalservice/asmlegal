@@ -9,12 +9,12 @@ const servicesData = [
   {
     title: "Real Estate & Property Law",
     items: [
-      "Real Estate Collaboration & Joint Ventures",
-      "Documentation & Registration",
-      "Real Estate Counseling & Development Transactions",
-      "Corporate and Retail Leasing",
       "Consultation, Contracts & Sub-Contracts",
       "Property Transfer & Succession",
+      "Property Development & Transactions",
+      "Documentation & Registration",
+      "Corporate and Retail Leasing",
+      "Real Estate Collaboration & Joint Ventures",
       "Rera Services",
     ],
   },
@@ -34,26 +34,25 @@ const servicesData = [
   {
     title: "Civil & Revenue Litigation",
     items: [
-      "Civil Cases",
+      "Property Matters",
       "Payment / Debt / Money Recovery",
       "Mediation & Counselling",
       "Insolvency & Bankruptcy",
       "Commercial Disputes",
       "Alternative Dispute Resolution (ADR)",
       "Legal Notice Support",
-      "Dispute Resolution",
       "Revenue Matters"
     ],
   },
   {
-    title: "Criminal Litigation ",
+    title: "Criminal Litigation & White Collar Crimes",
     items: [
       "Cheque Bounce & Financial Disputes",
-      "Domestic Violence, Dowry & Matrimonial Offenses",
-      "Bail Matters ",
-      "Anticipatory & Tegature Bail",
-      "FIR Quashing & Legal Notice Support",
-      // "White collar Crime & financial offenses Defense",
+      "Domestic Violence & Matrimonial Offences",
+      "Anticipatory & Regular Bail",
+      "Corporate & Financial Fraud",
+      "White Collar Crimes & Financial Offences Matters",
+      "Business Crime & Corporate Offences",
     ],
   },
   {
@@ -66,13 +65,7 @@ const servicesData = [
       "Inheritance & Succession Disputes"
     ],
   },
-  {
-    title: "White Collar Crimes",
-    items: ["Corporate & Financial Fraud Defense",
-      "Money Laundering & Economic Offenses",
-      "Business Crime & Corporate Offenses",
-      "Criminal Defamation & Reputation Management"],
-  },
+
   {
     title: "Startup & Early Stages",
     items: ["startup companies ",
