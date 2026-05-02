@@ -73,7 +73,6 @@ const servicesData = [
       "Business Formation & Structuring",
       "Clear Contracts & Legal Documentation",
       "Safeguard Your Brand & Business",
-      "Fund Raising & Investor Support",
       "Founder & Investor Documentation",
       "Business Formation & structuring",
       "Strategic dispute resolution & risk control"
