@@ -115,6 +115,13 @@
   transform: translateX(5px);
 }
 
+.article-modal-overlay{
+  color: #ef4524e6;
+  overflow-y:auto;
+  overscroll-behavior: contain;
+  display: block;
+}
+
 /* MOBILE FIX */
 @media (max-width: 768px) {
   .col-lg-4:not(:last-child) .vision-card::after {

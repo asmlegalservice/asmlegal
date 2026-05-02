@@ -70,31 +70,31 @@ const PublishedArticles = () => {
       {/* Stats Section */}
       <section className="articles-stats">
         <div className="container">
-          <div className="row g-4">
-            <div className="col-6 col-md-3">
+          <div className="row g-4 w-75 mx-auto">
+            <div className="col-6 col-md-4">
               <div className="stat-box">
-                <span className="stat-number">50+</span>
-                <span className="stat-label">Articles Published</span>
+                <span className="stat-number">425+</span>
+                <span className="stat-label">Legal Blogs Published</span>
               </div>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-4">
               <div className="stat-box">
-                <span className="stat-number">15+</span>
-                <span className="stat-label">Legal Journals</span>
+                <span className="stat-number">21+</span>
+                <span className="stat-label">Years of Legal Practice Experience</span>
               </div>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-4">
               <div className="stat-box">
-                <span className="stat-number">10+</span>
-                <span className="stat-label">Years of Writing</span>
+                <span className="stat-number">20+</span>
+                <span className="stat-label">Legal Topics Covered In Blogs</span>
               </div>
             </div>
-            <div className="col-6 col-md-3">
+            {/* <div className="col-6 col-md-3">
               <div className="stat-box">
                 <span className="stat-number">8</span>
                 <span className="stat-label">Practice Areas</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -102,10 +102,7 @@ const PublishedArticles = () => {
       {/* Articles List */}
       <section className="articles-list-section">
         <div className="container">
-          <div className="section-header text-center">
-            <h2>Featured Publications</h2>
-            <div className="title-underline"></div>
-          </div>
+
 
           <div className="articles-grid">
             {/* First Row - 3 Articles */}

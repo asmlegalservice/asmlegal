@@ -74,6 +74,7 @@ const servicesData = [
       "Clear Contracts & Legal Documentation",
       "Safeguard Your Brand & Business",
       "Founder & Investor Documentation",
+      "Fund Raising & Investor Documentation",
       "Strategic dispute resolution & risk control"
     ],
   },
