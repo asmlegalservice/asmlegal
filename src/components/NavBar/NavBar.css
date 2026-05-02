@@ -229,6 +229,8 @@
     transform: translateX(-50%);
     width: 1400px;
     margin-top: -13px;
+    height:550px;
+    overflow-y: scroll;
   }
 }
 
