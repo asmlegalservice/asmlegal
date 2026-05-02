@@ -42,10 +42,14 @@
 /* LOGO */
 .navbar-brand {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items:center;
+  gap:5px;
   
 }
+
+.navbar-container {
+padding-left: 90px;
+padding-right: 90px;}
 
 .navbar-logo {
   height: 40px;
@@ -178,6 +182,8 @@
 
 .blog-menu {
   min-width: 700px;
+  position: relative;
+  left: -200px;
   padding: 15px;
 }
 
@@ -223,7 +229,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 1450px;
+    width: 1400px;
     margin-top: -13px;
   }
 }
@@ -233,13 +239,14 @@
 /* ============================= */
 @media (max-width: 991px) {
 
- 
- 
+
+  
 
   /* Only show when Bootstrap adds .show class via tap */
   .navbar .dropdown-menu.show {
-    display: block !important;
-    overflow-y: scroll;
+ 
+    overflow-y: auto;
+    max-height: 60vh;
   }
 
   /* Services resets to inline/stacked */
@@ -357,4 +364,12 @@
     margin-top: 10px;
     text-align: center;
   }
+}
+
+@media (min-width: 991px) and (max-width: 1360px) {
+  .services-dropdown .dropdown-menu.services-menu
+  {
+    width: 90%;
+  }
+
 }

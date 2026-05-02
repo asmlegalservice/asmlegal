@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 
 import Navbar from "./components/NavBar/NavBar";
 import TopBanner from "./components/TopBanner/TopBanner";
-import CustomCursor from "./components/CustomePointer/CustomePointer";
+// import CustomCursor from "./components/CustomePointer/CustomePointer";
 import Disclaimer from "./components/Disclaimer/Disclaimer";
 
 //Pages
@@ -46,7 +46,7 @@ function AppContent() {
   return (
     <div className="app-wrapper">
       <Loader onDone={() => setLoaderDone(true)} />
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       {loaderDone && <Disclaimer />}
 
       {/* Overlay header */}
@@ -60,6 +60,7 @@ function AppContent() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
+        {/* <Route path="/services/:id" element={<Practice_special_Page />} /> */}
       </Routes>
 
       <Footer />

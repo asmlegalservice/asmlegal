@@ -9,54 +9,89 @@ const servicesData = [
   {
     title: "Real Estate & Property Law",
     items: [
-      "Real Estate Collaboration & Joint Venture",
+      "Real Estate Collaboration & Joint Ventures",
       "Documentation & Registration",
-      "Real Estate Counseling & Development Transaction",
-      "Corporate And Retail Leasing",
-      "Dispute Resolution",
-      "Consultation, Contract & Sub-Contract",
+      "Real Estate Counseling & Development Transactions",
+      "Corporate and Retail Leasing",
+      "Consultation, Contracts & Sub-Contracts",
       "Property Transfer & Succession",
-      "Revenue Matters",
+      "Rera Services",
     ],
   },
   {
     title: "Matrimonial & Family Disputes",
-    items: ["Mutual Divorse", "Family Disputes", "Domestic Violence","Muslim Divorce", "Counselling & Consultation"],
+    items: [
+      "Mutual Divorce",
+      "Family Disputes",
+      "Domestic Violence",
+      "Muslim Divorce",
+      "Counselling Median & Consultation",
+      "Property & Family Disputes",
+      "Inheritance & Succession Disputes",
+      "Property Partition & Family Settlements"
+    ],
   },
   {
-    title: "Litigation",
-    items: ["Civil Cases", "Commercial Disputes", "Mediation", "Insolvency"],
+    title: "Civil & Revenue Litigation",
+    items: [
+      "Civil Cases",
+      "Payment / Debt / Money Recovery",
+      "Mediation & Counselling",
+      "Insolvency & Bankruptcy",
+      "Commercial Disputes",
+      "Alternative Dispute Resolution (ADR)",
+      "Legal Notice Support",
+      "Dispute Resolution",
+      "Revenue Matters"
+    ],
   },
   {
     title: "Criminal Litigation ",
-    items: ["Bail Matters ", "FIR Quashing & Legal Notice Support", "Domestic Violence, Dowry & Matrimonial Offenses", "Cheque Bounce & Financial Disputes"],
+    items: [
+      "Cheque Bounce & Financial Disputes",
+      "Domestic Violence, Dowry & Matrimonial Offenses",
+      "Bail Matters ",
+      "Anticipatory & Tegature Bail",
+      "FIR Quashing & Legal Notice Support",
+      // "White collar Crime & financial offenses Defense",
+      ],
   },
-   {
-    title: "Succession Planning & Estate Management ",
-    items: ["Transfer of family assets and wealth ", "Business succession planning ", "Protection of beneficiaries’ rights ", "Minimizing legal risks and delays "],
+  {
+    title: " Will Succession & Estate Planning  ",
+    items: [
+      "Transfer of family assets and wealth ",
+      "Business succession planning ",
+      "Protection of beneficiaries’ rights ",
+      "Minimizing legal risks and delays ",
+      "Inheritance & Succession Disputes"
+    ],
   },
-   {
+  {
     title: "White Collar Crimes",
-    items: ["Corporate & Financial Fraud Defense", 
-      "Money Laundering & Economic Offenses", "Business Crime & Corporate Offenses", "Criminal Defamation & Reputation Management"],
+    items: ["Corporate & Financial Fraud Defense",
+      "Money Laundering & Economic Offenses", 
+      "Business Crime & Corporate Offenses", 
+      "Criminal Defamation & Reputation Management"],
   },
-   {
+  {
     title: "Startup & Early Stages",
-    items: ["startup companies ", "Clear Contracts & Legal Documentation",
-       "Safeguard Your Brand & Business", "Dispute Resolution & Risk Management"
-      ,"Regulatory Compliance & RPR Support","Regulatory Compliance & RPR Support"],
+    items: ["startup companies ",
+      "Clear Contracts & Legal Documentation",
+      "Safeguard Your Brand & Business", 
+      "Dispute Resolution & Risk Management",
+      "Regulatory Compliance & RPR Support"],
   },
-  
-  
+
+
 ];
 
 const Navbar = () => {
-  const [scrolled, setScrolled]         = useState(false);
-  const [isMobile, setIsMobile]         = useState(window.innerWidth < 992);
+  const [scrolled, setScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const [blogOpen, setBlogOpen]         = useState(false);
+  const [blogOpen, setBlogOpen] = useState(false);
   const servicesTimer = useRef(null);
-  const blogTimer     = useRef(null);
+  const blogTimer = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 80);
@@ -103,7 +138,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar navbar-expand-lg custom-navbar ${scrolled ? "scrolled" : ""}`}>
-      <div className="container-fluid px-4">
+      <div className="container-fluid navbar-container">
 
         {/* LOGO */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
