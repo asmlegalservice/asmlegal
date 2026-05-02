@@ -104,8 +104,8 @@ const Contact = () => {
             <div className="contact-card">
               <i className="bi bi-telephone contact-icon"></i>
               <h4>Phone</h4>
-              <p>+91 98765 43210</p>
-              <p>+91 98765 43211</p>
+              <p> +91 93700 72022</p>
+             
             </div>
           </div>
 
