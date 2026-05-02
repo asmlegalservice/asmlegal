@@ -70,12 +70,12 @@ const servicesData = [
   {
     title: "Startup & Early Stage Companies",
     items: [
-      "Company Formation & Setup ",
+      "Business Formation & Structuring",
       "Clear Contracts & Legal Documentation",
       "Safeguard Your Brand & Business",
       "Fund Raising & Investor Support",
       "Founder & Investor Documentation",
-      "Bussiness Formation & structuring",
+      "Business Formation & structuring",
       "Strategic dispute resolution & risk control"
     ],
   },
