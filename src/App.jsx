@@ -12,6 +12,8 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Blogs from "./pages/Blogs/Blogs";
+import Careers from "./pages/Careers/Careers";
+import PublishedArticles from "./pages/PublishedArticles/PublishedArticles";
 import Footer from "./components/Footter/Footer";
 
 import "./App.css";
@@ -31,6 +33,9 @@ function AppContent() {
       smooth: true,
     });
 
+    // Store on window so Disclaimer can access it
+    window.lenis = lenis;
+
     const raf = (time) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -40,6 +45,7 @@ function AppContent() {
 
     return () => {
       lenis.destroy();
+      window.lenis = null;
     };
   }, []);
 
@@ -60,6 +66,8 @@ function AppContent() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/published-articles" element={<PublishedArticles />} />
         {/* <Route path="/services/:id" element={<Practice_special_Page />} /> */}
       </Routes>
 

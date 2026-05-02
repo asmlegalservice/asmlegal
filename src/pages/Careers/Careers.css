@@ -1,0 +1,331 @@
+/* ============================= */
+/*         CAREERS PAGE          */
+/* ============================= */
+
+.careers-page {
+  padding-top: 120px;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.careers-hero {
+  padding: 80px 0 60px;
+  background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+}
+
+.careers-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #090909;
+  margin-bottom: 20px;
+}
+
+.title-underline {
+  width: 60px;
+  height: 3px;
+  background: #ef4524e6;
+  margin: 0 auto 25px;
+}
+
+.careers-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Why Join Section */
+.why-join-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 35px 25px;
+  border: 1px solid #e0e0e0;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  border-color: #ef4524e6;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-card i {
+  font-size: 2.5rem;
+  color: #ef4524e6;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.benefit-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #090909;
+  margin-bottom: 12px;
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Openings Section */
+.openings-section {
+  padding: 60px 0 80px;
+  background: #f8f8f8;
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #090909;
+}
+
+.job-card {
+  background: #ffffff;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.job-card:hover {
+  border-color: #ef4524e6;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.job-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #090909;
+  margin: 0;
+}
+
+.job-type {
+  font-size: 0.75rem;
+  color: #ef4524e6;
+  background: rgba(239, 69, 36, 0.1);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.job-meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.job-meta i {
+  color: #ef4524e6;
+  margin-right: 5px;
+}
+
+.job-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.apply-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ef4524e6;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  color: #d13a1f;
+  gap: 12px;
+}
+
+/* CTA Section */
+.careers-cta {
+  padding: 80px 0;
+  background: #090909;
+}
+
+.careers-cta h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.careers-cta p {
+  font-size: 1.1rem;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.btn-submit-resume {
+  display: inline-block;
+  background: #ef4524e6;
+  color: #ffffff;
+  padding: 14px 35px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-submit-resume:hover {
+  background: #ffffff;
+  color: #090909;
+}
+
+/* ============================= */
+/*         RESPONSIVE            */
+/* ============================= */
+
+@media (max-width: 991px) {
+  .careers-page {
+    padding-top: 100px;
+  }
+
+  .careers-hero {
+    padding: 60px 0 50px;
+  }
+
+  .careers-title {
+    font-size: 2.5rem;
+  }
+
+  .why-join-section {
+    padding: 60px 0;
+  }
+
+  .benefit-card {
+    padding: 30px 20px;
+  }
+
+  .openings-section {
+    padding: 50px 0 60px;
+  }
+
+  .section-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .careers-cta {
+    padding: 60px 0;
+  }
+
+  .careers-cta h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers-hero {
+    padding: 50px 0 40px;
+  }
+
+  .careers-title {
+    font-size: 2rem;
+  }
+
+  .careers-subtitle {
+    font-size: 1rem;
+  }
+
+  .benefit-card {
+    padding: 25px 20px;
+  }
+
+  .benefit-card i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .benefit-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .job-card {
+    padding: 25px;
+  }
+
+  .job-title {
+    font-size: 1.1rem;
+  }
+
+  .job-meta {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+
+  .careers-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .careers-cta p {
+    font-size: 1rem;
+  }
+
+  .btn-submit-resume {
+    padding: 12px 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .careers-title {
+    font-size: 1.7rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .title-underline {
+    width: 50px;
+    height: 2px;
+  }
+
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .job-type {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+
+  .careers-cta {
+    padding: 50px 20px;
+  }
+
+  .careers-cta h2 {
+    font-size: 1.3rem;
+  }
+}

@@ -23,7 +23,7 @@ const VisionSection = () => {
     return (
         <div className="container py-5">
             <div className="section-header">
-                <h2>The ASM Advantage</h2>
+                <h2>The ASM Legal Advantage</h2>
             </div>
             <div className="row vision-section-container g-4">
 
@@ -31,7 +31,7 @@ const VisionSection = () => {
                     <div className="col-lg-4 col-md-6 col-12" key={index}>
 
                         <div className="vision-card">
-                            <i className={`icon ${item.icon}`} pri-icon></i>
+                            <i className={`icon ${item.icon}`}></i>
                             <h2>{item.title}</h2>
                             <p>{item.desc}</p>
                             

@@ -25,12 +25,22 @@
 
 /* CARD */
 .vision-card {
-  padding: 30px 20px;
+  padding: 50px 20px;
   height: 90%;
- 
+  position: relative;
   transition: 0.3s;
-  border-right: 1px solid black;
-  
+  text-align: center;
+}
+
+/* Short vertical divider between cards */
+.col-lg-4:not(:last-child) .vision-card::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 45%;
+  bottom: 12%;
+  width: 1px;
+  background: #9a9797;
 }
 
 .vision-section-container{
@@ -47,8 +57,10 @@
 .vision-card i {
   width: 65px;
   height: 65px;
-  background: #ef4524e6; /* 🔥 better than red for legal theme */
+  background: #ef4524e6; 
   color: #ffffff;
+  position: relative;
+  left:40%;
 
   border-radius: 50%;
 
@@ -105,10 +117,19 @@
 
 /* MOBILE FIX */
 @media (max-width: 768px) {
-.vision-card {
-    border-right: none;
-    border-bottom: 1px solid black;
+  .col-lg-4:not(:last-child) .vision-card::after {
+    right: 15%;
+    left: 15%;
+    top: auto;
+    bottom: 0;
+    width: auto;
+    height: 1px;
+    background: #ddd;
   }
 
-  
+  .vision-card {
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 15px;
+  }
 }

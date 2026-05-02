@@ -183,7 +183,7 @@ padding-right: 90px;}
 .blog-menu {
   min-width: 700px;
   position: relative;
-  left: -200px;
+  left: -270px;
   padding: 15px;
 }
 
@@ -311,18 +311,22 @@ padding-right: 90px;}
     border-bottom: none;
   }
 
-  /* Navbar collapse mobile - scrollable */
+  /* Navbar collapse mobile */
   .navbar-collapse {
     background: white;
     padding: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    max-height: calc(100vh - 80px);
-    overflow-y: auto;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     z-index: 1000;
+  }
+
+  /* When menu is open (shown), allow scrolling */
+  .navbar-collapse.show {
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
   }
 
   .navbar-nav {

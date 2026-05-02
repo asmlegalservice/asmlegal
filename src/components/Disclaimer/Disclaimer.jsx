@@ -51,7 +51,7 @@ const Disclaimer = () => {
                     </div>
                 </div>
                 <button className="disclaimer-btn" onClick={handleAgree}>
-                     Agree
+                    Agree   
                 </button>
             </div>
         </div>

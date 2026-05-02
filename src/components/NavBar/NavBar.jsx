@@ -54,7 +54,7 @@ const servicesData = [
       "Anticipatory & Tegature Bail",
       "FIR Quashing & Legal Notice Support",
       // "White collar Crime & financial offenses Defense",
-      ],
+    ],
   },
   {
     title: " Will Succession & Estate Planning  ",
@@ -69,15 +69,15 @@ const servicesData = [
   {
     title: "White Collar Crimes",
     items: ["Corporate & Financial Fraud Defense",
-      "Money Laundering & Economic Offenses", 
-      "Business Crime & Corporate Offenses", 
+      "Money Laundering & Economic Offenses",
+      "Business Crime & Corporate Offenses",
       "Criminal Defamation & Reputation Management"],
   },
   {
     title: "Startup & Early Stages",
     items: ["startup companies ",
       "Clear Contracts & Legal Documentation",
-      "Safeguard Your Brand & Business", 
+      "Safeguard Your Brand & Business",
       "Dispute Resolution & Risk Management",
       "Regulatory Compliance & RPR Support"],
   },
@@ -150,8 +150,22 @@ const Navbar = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarMain"
+          onClick={() => {
+            const nav = document.getElementById("navbarMain");
+            if (nav) {
+              let bsCollapse = Collapse.getInstance(nav);
+              if (!bsCollapse) {
+                bsCollapse = new Collapse(nav, { toggle: false });
+              }
+              if (nav.classList.contains("show")) {
+                bsCollapse.hide();
+                setServicesOpen(false);
+                setBlogOpen(false);
+              } else {
+                bsCollapse.show();
+              }
+            }
+          }}
           aria-label="Toggle navigation"
         >
           ☰
@@ -225,14 +239,22 @@ const Navbar = () => {
                 </div>
               )}
             </li>
+            <li className="nav-item">
+              <NavLink to="/published-articles" onClick={closeMenu} className="nav-link">Published Articles</NavLink>
+            </li>
 
             <li className="nav-item">
               <NavLink to="/about" onClick={closeMenu} className="nav-link">About</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/careers" onClick={closeMenu} className="nav-link">Careers</NavLink>
             </li>
 
             <li className="nav-item">
               <NavLink to="/contact" onClick={closeMenu} className="nav-link">Contact</NavLink>
             </li>
+
+
 
           </ul>
 
