@@ -75,7 +75,8 @@ const servicesData = [
       "Safeguard Your Brand & Business",
       "Founder & Investor Documentation",
       "Fund Raising & Investor Documentation",
-      "Strategic dispute resolution & risk control"
+      "Vendor & Partnership Agreement",
+      
     ],
   },
 
@@ -226,12 +227,22 @@ const Navbar = () => {
                   {...makeHoverHandlers(setBlogOpen, blogTimer)}
                 >
                   <div className="blog-grid">
-                    {[1, 2, 3, 4].map((b) => (
-                      <Link key={b} to="/blogs" onClick={closeMenu} className="blog-item">
-                        <span>Blog Title {b}</span>
-                        <small>Category</small>
-                      </Link>
-                    ))}
+                    <Link to="/blogs" onClick={closeMenu} className=" service-title">
+                      <span>Understanding Real Estate Law in India</span>
+                    
+                    </Link>
+                    <Link to="/blogs" onClick={closeMenu} className=" service-title">
+                      <span>Family Law: Divorce and Custody Rights</span>
+                  
+                    </Link>
+                    <Link to="/blogs" onClick={closeMenu} className=" service-title">
+                      <span>Corporate Compliance for Startups</span>
+                     
+                    </Link>
+                    <Link to="/blogs" onClick={closeMenu} className=" service-title">
+                      <span>Civil Litigation Process Explained</span>
+                     
+                    </Link>
                   </div>
                 </div>
               )}

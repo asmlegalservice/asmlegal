@@ -57,11 +57,9 @@ const PublishedArticles = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
-              <h1 className="articles-title">Published Articles</h1>
+              <h1 className="articles-title">Published Legal Blogs & Articles</h1>
               <div className="title-underline"></div>
-              <p className="articles-subtitle">
-                Insights and analysis from our legal experts featured in leading law journals and publications.
-              </p>
+          
             </div>
           </div>
         </div>
