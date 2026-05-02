@@ -15,7 +15,7 @@ const servicesData = [
       "Documentation & Registration",
       "Corporate and Retail Leasing",
       "Real Estate Collaboration & Joint Ventures",
-      "Rera Services",
+     
     ],
   },
   {
@@ -25,7 +25,7 @@ const servicesData = [
       "Family Disputes",
       "Domestic Violence",
       "Muslim Divorce",
-      "Counselling Median & Consultation",
+      "Counselling Mediation & Consultation",
       "Property & Family Disputes",
       "Inheritance & Succession Disputes",
       "Property Partition & Family Settlements"
@@ -56,18 +56,19 @@ const servicesData = [
     ],
   },
   {
-    title: " Will Succession & Estate Planning  ",
+    title: " Will, Succession & Estate Planning  ",
     items: [
       "Transfer of family assets and wealth ",
       "Business succession planning ",
       "Protection of beneficiaries’ rights ",
       "Minimizing legal risks and delays ",
-      "Inheritance & Succession Disputes"
+      "Inheritance & Succession Disputes",
+      "Will & Asset Transfer"
     ],
   },
 
   {
-    title: "Startup & Early Stages",
+    title: "Startup & Early Stage Companies",
     items: ["startup companies ",
       "Clear Contracts & Legal Documentation",
       "Safeguard Your Brand & Business",
@@ -254,8 +255,8 @@ const Navbar = () => {
           <div className="ms-auto">
             <Link to="/contact">
               <button className="btn btn-getInTouch">
-                <i className="bi bi-telephone me-2"></i>
-                Request Appointment
+                <i className="bi bi-telephone me-1"></i>
+                Book Appointment
               </button>
             </Link>
           </div>

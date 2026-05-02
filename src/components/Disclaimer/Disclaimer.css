@@ -132,5 +132,6 @@
   .disclaimer-body p {
     font-size: 0.75rem;
     text-indent: 15px;
+    width:80% ;
   }
 }

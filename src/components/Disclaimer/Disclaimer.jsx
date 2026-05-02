@@ -1,10 +1,33 @@
 import { useEffect, useState } from "react";
 import "./Disclaimer.css";
 
+const DISCLAIMER_KEY = "asm_disclaimer_agreed";
+const ONE_DAY_MS = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+
 const Disclaimer = () => {
     const [show, setShow] = useState(false);
 
+    // Check if user already agreed within last 24 hours
+    const hasValidAgreement = () => {
+        const agreedTime = localStorage.getItem(DISCLAIMER_KEY);
+        if (!agreedTime) return false;
+
+        const agreedTimestamp = parseInt(agreedTime, 10);
+        const now = Date.now();
+        return (now - agreedTimestamp) < ONE_DAY_MS;
+    };
+
+    // Store agreement timestamp
+    const storeAgreement = () => {
+        localStorage.setItem(DISCLAIMER_KEY, Date.now().toString());
+    };
+
     useEffect(() => {
+        // Don't show if user already agreed within 1 day
+        if (hasValidAgreement()) {
+            return;
+        }
+
         const timer = setTimeout(() => {
             setShow(true);
             document.body.style.overflow = "hidden";
@@ -19,6 +42,9 @@ const Disclaimer = () => {
     }, []);
 
     const handleAgree = () => {
+        // Store agreement timestamp for 1 day
+        storeAgreement();
+
         setShow(false);
         document.body.style.overflow = "auto";
         document.body.classList.remove("disclaimer-open");
